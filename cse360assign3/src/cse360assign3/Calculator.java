@@ -17,28 +17,28 @@ public class Calculator {
 	 * int adds
 	 */
 	public void add (int value) {
-		
+		total += value;
 	}
 	/**
 	 * @param-value
 	 * int subtracts
 	 */
 	public void subtract (int value) {
-		
+		total -= value;
 	}
 	/**
 	 * @param-value
 	 * int multiplys
 	 */
 	public void multiply (int value) {
-		
+		total *= value;
 	}
 	/**
 	 * @param-value
 	 * int divides
 	 */
 	public void divide (int value) {
-		
+		total /= value;
 	}
 	/**
 	 * @param-value

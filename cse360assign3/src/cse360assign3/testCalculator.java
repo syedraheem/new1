@@ -8,27 +8,38 @@ public class testCalculator {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		Calculator test = new Calculator();
+		assertNotNull(test);
 	}
 	@Test
 	public void getTotal () {
-		fail("Not yet implemented");
+		
 	}
 	@Test
 	public void add (int value) {
-		fail("Not yet implemented");
+		Calculator test = new Calculator();
+		test.add(30);
+		assertEquals(30,test.getTotal());
 	}
 	@Test
 	public void subtract (int value) {
-		fail("Not yet implemented");
+		Calculator test = new Calculator();
+		test.subtract(20);
+		assertEquals(-20,test.getTotal());
 	}
 	@Test
 	public void multiply (int value) {
-		fail("Not yet implemented");
+		Calculator test = new Calculator();
+		test.add(5);
+		test.multiply(10);
+		assertEquals(50,test.getTotal());
 	}
 	@Test
 	public void divide (int value) {
-		fail("Not yet implemented");
+		Calculator test = new Calculator();
+		test.add(5);
+		test.divide(5);
+		assertEquals(1,test.getTotal());
 	}
 	@Test
 	public void getHistory () {
