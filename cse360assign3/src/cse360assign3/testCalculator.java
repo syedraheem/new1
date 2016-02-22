@@ -16,26 +16,26 @@ public class testCalculator {
 		
 	}
 	@Test
-	public void add (int value) {
+	public void add () {
 		Calculator test = new Calculator();
 		test.add(30);
 		assertEquals(30,test.getTotal());
 	}
 	@Test
-	public void subtract (int value) {
+	public void subtract () {
 		Calculator test = new Calculator();
 		test.subtract(20);
 		assertEquals(-20,test.getTotal());
 	}
 	@Test
-	public void multiply (int value) {
+	public void multiply () {
 		Calculator test = new Calculator();
 		test.add(5);
 		test.multiply(10);
 		assertEquals(50,test.getTotal());
 	}
 	@Test
-	public void divide (int value) {
+	public void divide () {
 		Calculator test = new Calculator();
 		test.add(5);
 		test.divide(5);
@@ -43,6 +43,8 @@ public class testCalculator {
 	}
 	@Test
 	public void getHistory () {
-		fail("Not yet implemented");
+		Calculator test = new Calculator();
+		test.add(5);
+		assertEquals("0+5",test.getHistory());
 	}
 }

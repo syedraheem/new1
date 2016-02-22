@@ -4,13 +4,14 @@ package cse360assign3;
 public class Calculator {
 
 	private int total;
-
+	private String raheem;
 	public Calculator () {
 		total = 0;  // not needed - included for clarity
+		raheem = "0";
 	}
 	
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	/**
 	 * @param-value
@@ -18,6 +19,7 @@ public class Calculator {
 	 */
 	public void add (int value) {
 		total += value;
+		raheem += "+" + value;
 	}
 	/**
 	 * @param-value
@@ -25,6 +27,7 @@ public class Calculator {
 	 */
 	public void subtract (int value) {
 		total -= value;
+		raheem += "-" + value;
 	}
 	/**
 	 * @param-value
@@ -32,19 +35,25 @@ public class Calculator {
 	 */
 	public void multiply (int value) {
 		total *= value;
+		raheem += "*" + value;
 	}
 	/**
 	 * @param-value
 	 * int divides
 	 */
 	public void divide (int value) {
-		total /= value;
+		if(value == 0)
+			total = 0;
+		else
+			total /= value;
+		raheem += "/" + value;
 	}
 	/**
 	 * @param-value
 	 * int gets history
 	 */
 	public String getHistory () {
-		return "";
+		
+		return raheem;
 	}
 }
